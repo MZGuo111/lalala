@@ -1,35 +1,35 @@
-�ֶ���,������,���ͳ���,ȡֵ��Χ,�Ƿ�ɷǿ�,�Ƿ�Ϊ����,��ע
-admin_id,Ա����,VARCHAR (10),,N,Y,����
-admin_pass,Ա������,VARCHAR (16),,N,N,
+字段名,中文名,类型长度,取值范围,是否可非空,是否为主键,备注
+admin_id,员工号,VARCHAR (10),,N,Y,主键
+admin_pass,员工密码,VARCHAR (16),,N,N,
 ,,,,,,
-�ֶ���,������,���ͳ���,ȡֵ��Χ,�Ƿ�ɷǿ�,�Ƿ�Ϊ����,��ע
-PName,����,VARCHAR (10),,N,N,
-PSex,�Ա�,VARCHAR (1),"M,F",N,N,
-PID,����֤����,VARCHAR (18),,N,Y,����
-PTel,�绰,VARCHAR (11),,N,N,
-PPassword,����,VARCHAR (16),,N,N,
+字段名,中文名,类型长度,取值范围,是否可非空,是否为主键,备注
+PName,姓名,VARCHAR (10),,N,N,
+PSex,性别,VARCHAR (1),"M,F",N,N,
+PID,身份证号码,VARCHAR (18),,N,Y,主键
+PTel,电话,VARCHAR (11),,N,N,
+PPassword,密码,VARCHAR (16),,N,N,
 ,,,,,,
-�ֶ���,������,���ͳ���,ȡֵ��Χ,�Ƿ�ɷǿ�,�Ƿ�Ϊ����,��ע
-PID,����֤����,VARCHAR (18),,N,Y,"����,���"
-TNum,��Ʊ��,VARCHAR (12),,N,Y,����
-�ֶ���,������,���ͳ���,ȡֵ��Χ,�Ƿ�ɷǿ�,�Ƿ�Ϊ����,��ע
-TNum,��Ʊ��,VARCHAR (12),,N,Y,����
-FNum,�����,VARCHAR (10),,N,N,���
-PLevel,���յȼ�,VARCHAR (1),0~1,N,N,���
-PSeat,��λ��,VARCHAR (2),00~99,N,N,
-PFare,Ʊ��,VARCHAR (8),,N,N,
-Tsever,ҵ��Ա,VARCHAR (10),,N,N,
+字段名,中文名,类型长度,取值范围,是否可非空,是否为主键,备注
+PID,身份证号码,VARCHAR (18),,N,Y,"主键,外键"
+TNum,机票号,VARCHAR (12),,N,Y,"主键,外键"
+字段名,中文名,类型长度,取值范围,是否可非空,是否为主键,备注
+TNum,机票号,VARCHAR (12),,N,Y,主键
+FNum,航班号,VARCHAR (10),,N,N,外键
+PLevel,机舱等级,VARCHAR (1),0~1,N,N,外键
+PSeat,座位号,VARCHAR (2),00~99,N,N,
+PFare,票价,VARCHAR (8),,N,N,
+Tsever,业务员,VARCHAR (10),,N,N,
 ,,,,,,
-�ֶ���,������,���ͳ���,ȡֵ��Χ,�Ƿ�ɷǿ�,�Ƿ�Ϊ����,��ע
-FNum,�����,VARCHAR (10),,N,Y,"����,���"
-FName,�ɻ�����,VARCHAR (10),,N,N,
-FOrigin,ʼ����,VARCHAR (10),,N,N,
-FDestination,Ŀ�ĵ�,VARCHAR (10),,N,N,
-TOfftime,���ʱ��,VARCHAR (16),,N,N,
-TArrtime,�ִ�ʱ��,VARCHAR (16),,N,N,
+字段名,中文名,类型长度,取值范围,是否可非空,是否为主键,备注
+FNum,航班号,VARCHAR (10),,N,Y,"主键,外键"
+FName,飞机名称,VARCHAR (10),,N,N,
+FOrigin,始发地,VARCHAR (10),,N,N,
+FDestination,目的地,VARCHAR (10),,N,N,
+TOfftime,起飞时间,VARCHAR (16),,N,N,
+TArrtime,抵达时间,VARCHAR (16),,N,N,
 ,,,,,,
-�ֶ���,������,���ͳ���,ȡֵ��Χ,�Ƿ�ɷǿ�,�Ƿ�Ϊ����,��ע
-FNum,�����,VARCHAR (10),,N,Y,"����,���"
-TFare,Ʊ��,VARCHAR (8),,N,N,
-PLevel,���յȼ�,VARCHAR (1),0~1,N,Y,����
-FState,ʣ����λ,VARCHAR (2),00~99,N,N,
+字段名,中文名,类型长度,取值范围,是否可非空,是否为主键,备注
+FNum,航班号,VARCHAR (10),,N,Y,"主键,外键"
+TFare,票价,VARCHAR (8),,N,N,
+PLevel,机舱等级,VARCHAR (1),0~1,N,Y,主键
+FState,剩余座位,VARCHAR (2),00~99,N,N,
