@@ -10,12 +10,8 @@ PTel,电话,VARCHAR (11),,N,N,
 PPassword,密码,VARCHAR (16),,N,N,
 ,,,,,,
 字段名,中文名,类型长度,取值范围,是否可非空,是否为主键,备注
-FNum,航班号,VARCHAR (10),,N,Y,"主键,外键"
-PLevel,机舱等级,VARCHAR (1),0~1,N,N,
-PSeat,座位号,VARCHAR (2),00~99,N,N,
 PID,身份证号码,VARCHAR (18),,N,Y,"主键,外键"
-PLFare,实付款,VARCHAR (8),,N,N,
-,,,,,,
+TNum,机票号,VARCHAR (12),,N,Y,主键
 字段名,中文名,类型长度,取值范围,是否可非空,是否为主键,备注
 TNum,机票号,VARCHAR (12),,N,Y,主键
 FNum,航班号,VARCHAR (10),,N,N,外键
